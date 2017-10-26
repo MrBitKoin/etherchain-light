@@ -14,3 +14,5 @@ WORKDIR etherchain-light
 RUN \
 	npm install && mv config.js.example config.js && \
 	sed -i '/this.bootstrapUrl/c\  this.bootstrapUrl = "https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css";' config.js
+
+EXPOSE 3000
